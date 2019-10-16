@@ -23,7 +23,7 @@ steps:
   inputs:
     command: 'buildAndPush'
     Dockerfile: '**/Dockerfile'
-    containerRegistry: dsptutorial
+    containerRegistry: 'dsptutorial'
     repository: 'dsptalks/dsp'
     tags: |
           '2'
