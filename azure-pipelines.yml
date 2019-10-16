@@ -18,11 +18,7 @@ steps:
     echo See https://aka.ms/yaml
   displayName: 'Run a multi-line script'
 
-  steps:
-  - task: AzureRmWebAppDeployment@4
+- task: Docker@2
   inputs:
-    ConnectionType: 'AzureRM'
-    azureSubscription: 'Free Trial(6d49fee0-da31-4691-a265-f0943b5973f9)'
-    appType: 'webAppLinux'
-    WebAppName: 'dsptnew'
-    packageForLinux: '$(System.DefaultWorkingDirectory)/**/*.zip'
+    command: 'buildAndPush'
+    Dockerfile: '**/Dockerfile'
