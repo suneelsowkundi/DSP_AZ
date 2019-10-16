@@ -26,6 +26,6 @@ steps:
     containerRegistry: dsptutorial
     repository: 'dsptalks/dsp'
     tags: |
-          '1'
+          '2'
     
 
