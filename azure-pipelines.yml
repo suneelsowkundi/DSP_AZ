@@ -23,4 +23,5 @@ steps:
   inputs:
     repository: 'test_dspt'
     command: 'build'
-    Dockerfile: '/home/vsts/work/1/s/DSP_AZ/Dockerfile'
+    Dockerfile: '/DSP_AZ/Dockerfile'
+
