@@ -24,7 +24,7 @@ steps:
   inputs:
     command: 'buildAndPush'
     Dockerfile: '**/Dockerfile'
-    containerRegistry: 'dsptutorial.azurecr.io'
+    containerRegistry: 'dsptconection'
     repository: 'dsptalks/dsp'
     tags: |
           '1'
