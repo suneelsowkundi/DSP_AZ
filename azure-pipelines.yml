@@ -28,3 +28,24 @@ steps:
     repository: 'dsptalks/dsp'
     tags: |
           1
+- task: AzureAppServiceManage@0
+  displayName: Stop Application
+  inputs:
+    azureSubscription: 'Free Trial(6d49fee0-da31-4691-a265-f0943b5973f9)'
+    Action: 'Stop Azure App Service'
+    WebAppName: 'dsptnew'
+
+- task: AzureWebAppContainer@1
+  displayName: Deploy Container on dsptnew app
+  inputs:
+    azureSubscription: 'Free Trial(6d49fee0-da31-4691-a265-f0943b5973f9)'
+    appName: 'dsptnew'
+    containers: 'dsptalks/dsp:1'
+
+- task: AzureAppServiceManage@0
+  displayName: Start Application
+  inputs:
+    azureSubscription: 'Free Trial(6d49fee0-da31-4691-a265-f0943b5973f9)'
+    Action: 'Start Azure App Service'
+    WebAppName: 'dsptnew'
+
