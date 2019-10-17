@@ -27,6 +27,4 @@ steps:
     containerRegistry: 'dsptconection'
     repository: 'dsptalks/dsp'
     tags: |
-          '1'
-    
-
+          1
