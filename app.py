@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 @app.route('/basic')
 def hello():
-    word = 'Hello WORLD123 !!'
+    word = 'Hello UNIVERSE123 !!'
     return word
 
 if __name__ == '__main__':
